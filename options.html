@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <ul>
+            <li>You can setup a simple alias to any URL.
+                <em style="display: block; margin:1em">google https://www.google.com/</em>
+            </li>
+            <li>Then all you need to do is type 'u <alias>' in your browsers' address bar and your location will load your aliases URL.
+                <p style="margin-left:1em">u google</p>
+            </li>
+            <li>Additionally you can add place holders into your url that can be replaced with additional parameters passed in your browsers' address bar. Placehoder Format: [_\d+]
+                <p style="margin-left:1em">google https://www.google.com/?q=[_1]</p>
+            </li>
+            <li>URLs with place holders will replace those placeholders with  additional parameters passed in your browsers' address bar.
+                <p style="margin-left:1em">u google searchtext</p>
+            </li>
+        </ol>
+        <form>
+            <p style="display: block; position: relative;">
+                <label>Aliases (one per line, whitespace delimited)</label>
+                <button type="submit" style="display: inline-block; position: absolute; right: 0">Update</button>
+            </p>
+            <textarea id="aliases" style="width: 100%; height: 20em;"></textarea>
+        </form>
+        <script src="options.js"></script>
+    </body>
+</html>
+
