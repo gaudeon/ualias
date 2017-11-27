@@ -2,6 +2,12 @@
     "manifest_version": 2,
     "name": "uAlias",
     "version": "1.0",
+    "applications": {
+        "gecko": {
+            "id": "ualias@e7b5c417-f0a0-4e60-9888-6a3bd85b23ed.org",
+            "strict_min_version": "42.0"
+        }
+    },
 
     "description": "Associate short strings, aliases, with URLs",
 

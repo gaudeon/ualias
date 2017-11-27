@@ -59,3 +59,6 @@ typings/
 
 # dist dir
 dist/
+
+# mac dirs
+.DS_Store
